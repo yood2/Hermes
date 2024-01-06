@@ -5,6 +5,7 @@ def main():
     b = 0.05
     c = 10
 
+    # Test
     d = compound(a,b,c)
     print(d)
     print(discount(d,b,c))
