@@ -1,6 +1,6 @@
 import unittest
 
-from interest_module import *
+from asset_analysis_tools import *
 
 class TestInterestModule(unittest.TestCase):
 
@@ -53,8 +53,8 @@ class TestInterestModule(unittest.TestCase):
         expected_result = 426.53
         self.assertEqual(result, expected_result)
 
-    # tests for future_value(cash_flows, r, n=0)
-    def test_present_value(self):
+    # tests for future_value(cash_flows, r)
+    def test_future_value(self):
         cash_flows = [100,200,150]
         interest_rate = 0.05
         result = round(future_value_of_stream(cash_flows, interest_rate),2)
