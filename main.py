@@ -1,4 +1,4 @@
-from asset_analysis_tools import *
+from assetAnalysis import *
 
 def main():
     return 0
