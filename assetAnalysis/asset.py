@@ -1,9 +1,8 @@
 from abc import ABC, abstractmethod
 
 class Asset(ABC):
-    def __init__(self, name, value):
+    def __init__(self, name):
         self.name = name
-        self.value = value
 
     # REQUIRES: pv > 0, r >= 0
     # EFFECT: calculates future value of a cash flow given an interest rate and number of periods 

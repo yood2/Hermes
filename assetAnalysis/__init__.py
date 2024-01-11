@@ -1,9 +1,3 @@
-'''
-Variables:
-fv = future
-pv = present value
-r = interest rate
-c = cash flow
-n = number of periods
-'''
-
+from .asset import Asset
+from .bond import Bond
+from .stock import Stock

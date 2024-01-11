@@ -23,3 +23,8 @@ Will first make a Command Line Interface program to test all of the methods need
 
 ## Phase 2: Develop Front-End of Web Application
 Will be using React to create a modern one page web application that is responsive on both mobile and desktop.
+
+## Immediate To-Dos:
+- Write tests for Bond class
+- Finish Asset and Bond class
+- Complete CLI implementation for bond analysis
