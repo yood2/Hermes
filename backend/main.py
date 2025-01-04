@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import users
+from app.routes import users, stocks
 from app.persist.connection import create_db_and_tables
 
 app = FastAPI()
@@ -9,6 +9,7 @@ def on_startup():
     create_db_and_tables()
 
 app.include_router(users.router, prefix="/users", tags=["users"])
+app.include_router(stocks.router, prefix="/stocks", tags=["stocks"])
 
 @app.get("/")
 def read_root():
